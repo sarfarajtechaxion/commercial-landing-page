@@ -20,6 +20,10 @@ footer ul {
 .rera {
   margin-bottom: 15px;
   text-align: center;
+  color: #06207A;
+}
+.rera:hover {
+  color: #019210;
 }
 @media only screen and (min-width:480px) {
   footer ul {

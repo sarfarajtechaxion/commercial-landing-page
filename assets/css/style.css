@@ -9,10 +9,10 @@ html {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: #06207A;
 }
 a:hover {
-  color: #f2be22;
+  color: #019210;
 }
 section {
   padding: 25px 0;
@@ -59,7 +59,7 @@ h2 {
   letter-spacing: 1px;
 }
 h4 {
-  color: #06207A;
+  color: #c91616;
 }
 h3 {
   width: 100%;
