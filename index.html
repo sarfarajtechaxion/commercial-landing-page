@@ -611,31 +611,31 @@
         });
         
 
-        var form = $( "#request-call" );
-        form.validate();
-        $( "button" ).click(function() {
-        alert( "Valid: " + form.valid() );
-        });
+        // var form = $( "#request-call" );
+        // form.validate();
+        // $( "button" ).click(function() {
+        // alert( "Valid: " + form.valid() );
+        // });
         $(document).ready(function () {
             $('#generate-otp').click(function () {
-                alert('clicked.');
-                if (validateForm() === true) {
-                    alert('Form is valid.');
-                }
-                else{
-                    alert('Form is not valid.');
-                }
-            // if ($('#request-call').valid()) {
-            //     $(".otpDiv").addClass('show');
-            //     $(".otpDiv").removeClass('hide');
-            //     $('#request-call').addClass('hide');
-            //     $('#request-call').removeClass('show');
-            // }else{
-            //     $(".otpDiv").addClass('hide');
-            //     $(".otpDiv").removeClass('show');
-            //     $('#request-call').addClass('show');
-            //     $('#request-call').removeClass('hide');
-            // }
+                // alert('clicked.');
+                // if (validateForm() === true) {
+                //     alert('Form is valid.');
+                // }
+                // else{
+                //     alert('Form is not valid.');
+                // }
+            if ($('#request-call').valid()) {
+                $(".otpDiv").addClass('show');
+                $(".otpDiv").removeClass('hide');
+                $('#request-call').addClass('hide');
+                $('#request-call').removeClass('show');
+            }else{
+                $(".otpDiv").addClass('hide');
+                $(".otpDiv").removeClass('show');
+                $('#request-call').addClass('show');
+                $('#request-call').removeClass('hide');
+            }
         });
             //Tablet View Product Slider
             $('.product-slider').slick({
