@@ -301,6 +301,7 @@ input:focus {
   -webkit-box-orient: vertical;
   margin-bottom: 10px;
   text-align: justify;
+  font-size: 15px;
 }
 .product-slider .slider-slide .price {
   text-align: center;
