@@ -17,9 +17,21 @@ a:hover {
 section {
   padding: 25px 0;
 }
+.desktop {
+  display: none;
+}
+.mobile {
+  display: block;
+}
 @media only screen and (min-width: 768px) {
   section {
     padding: 40px 0;
+  }
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
   }
 }
 .container {

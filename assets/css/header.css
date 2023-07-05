@@ -9,7 +9,7 @@
 .header-wrapper,
 .main-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -35,7 +35,7 @@
 }
 .header-contact {
   font-size: 11px;
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: center;
   font-weight: 600;
@@ -70,6 +70,13 @@
   .logo img {
     width: 160px;
   }  
+  .header-contact {
+    display: flex;
+  }
+  .header-wrapper,
+  .main-menu {
+    justify-content: space-between;
+  }
   .header-contact .icon {
     padding-right: 10px;
   }
