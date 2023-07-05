@@ -70,17 +70,17 @@
                             <path fill="#FF0066" d="M40,-48.2C51.8,-37.8,61.3,-25.1,68.3,-8.6C75.3,7.9,79.8,28.3,71.7,40.6C63.6,52.9,43,57.1,23.4,64.1C3.9,71.2,-14.6,81,-31.1,78.1C-47.5,75.2,-62,59.7,-67.5,42.6C-73.1,25.5,-69.7,6.9,-65.8,-10.9C-61.8,-28.8,-57.3,-45.8,-46.2,-56.4C-35.2,-66.9,-17.6,-71,-1.7,-68.9C14.1,-66.9,28.2,-58.6,40,-48.2Z" transform="translate(100 100)" />
                         </svg> -->
                         <h2> CALL REQUEST </h2>
-                        <form class="" id="request-call" method="GET" action="/index.html">
-                            <div class="form-group">
+                        <form class="" id="request-call" method="POST" >
+                            <div class="form-group step1">
                                 <input name="fullname" class="input required" type="text" placeholder="Full Name *" autocomplete="off"/>
                             </div>
-                            <div class="form-group">
-                                <input name="phone" class="input" type="text" placeholder="Mobile Number *" autocomplete="off"/>
+                            <div class="form-group step1">
+                                <input name="phone" class="input" minlength="10" maxlength="10" type="text" placeholder="Mobile Number *" autocomplete="off"/>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group step1">
                                 <input name="email" class="input" type="email" placeholder="Email Id *" autocomplete="off"/>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group step1">
                                 <select name="projects" id="projects">
                                     <option value="">Investment Type</option>
                                     <option value="Showroom">Showroom</option>
@@ -88,32 +88,26 @@
                                     <option value="Corporate House">Corporate House</option>
                                 </select>
                             </div>
-                            <div class="form-check form-group">
+                            <div class="form-check form-group step1">
                                 <input class="form-checkbox" type="checkbox" value="" id="checkbox" name="checkbox">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    I agree that KUNVARJI Realty team can connect us via Phone Call, WhatsApp, SMS, E-Mail setc.
+                                <label class="form-check-label" for="checkbox">
+                                    I agree that KUNVARJI REALITY team can connect us via Phone Call, WhatsApp, SMS, E-Mail setc.
                                 </label>
                             </div>
-                            <button type="submit" class="btn-primary blue" id="submit" name="submit">SUBMIT</button>
+                            <button type="submit" class="btn-primary blue step1" id="submit" name="submit">SUBMIT</button>
                             <div class="otpDiv hide">
                                 <div class="form-group">
                                     <input name="otp" class="input" type="text" maxlength="6"
                                         placeholder="Verify OTP" />
                                 </div>
-                                <button type="button" class="btn-primary blue" id="generate-otp" name="generate-otp">Generate OTP</button>
+                                <button type="button" class="btn-primary blue" id="submit-otp" name="submit-otp">Submit OTP</button>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="single-item">
-                    <div> <img src="./assets/images/banner/Navartna banner.jpg" alt="Navaratna corporate park"> </div>
-                    <!-- <div> <img src="./assets/images/banner/Navaratna corporate park A.jpg" alt="Navaratna corporate park A"> </div>
-                    <div> <img src="./assets/images/banner/Navaratna corporate park Tower B.jpg" alt="Navaratna corporate park Tower B"> </div>
-                    <div> <img src="./assets/images/banner/STRATUM AT VENUS GROUNDS, NEHRUNAGAR, AHMEDABAD.jpg" alt="STRATUM AT VENUS GROUNDS, NEHRUNAGAR, AHMEDABAD"> </div>
-                    <div> <img src="./assets/images/banner/Stratum venus grounds 1.jpg" alt="Stratum venus grounds 1"> </div>
-                    <div> <img src="./assets/images/banner/Stratum venus grounds 2.jpg" alt="Stratum venus grounds 2"> </div> -->
+                    <div> <img src="./assets/images/banner/Navartna banner.jpg" alt="Navaratna corporate park"> </div>                    
                 </div>
-
             </div>
         </div>
     </section>
@@ -633,35 +627,14 @@
                 projects: 'please select an option from the list',
                 checkbox: 'please select check mark for communication',
             },
-        });
-        
-
-        // var form = $( "#request-call" );
-        // form.validate();
-        // $( "button" ).click(function() {
-        // alert( "Valid: " + form.valid() );
-        // });
-        $(document).ready(function () {
-            $('#generate-otp').click(function () {
-                // alert('clicked.');
-                // if (validateForm() === true) {
-                //     alert('Form is valid.');
-                // }
-                // else{
-                //     alert('Form is not valid.');
-                // }
-            if ($('#request-call').valid()) {
-                $(".otpDiv").addClass('show');
-                $(".otpDiv").removeClass('hide');
-                $('#request-call').addClass('hide');
-                $('#request-call').removeClass('show');
-            }else{
-                $(".otpDiv").addClass('hide');
-                $(".otpDiv").removeClass('show');
-                $('#request-call').addClass('show');
-                $('#request-call').removeClass('hide');
+            submitHandler:function(){
+                $('.step1').hide();
+                $('.otpDiv').show();
+                $('#banner-wrapper h2').text('Verify OTP');
             }
         });
+        
+        $(document).ready(function () {      
             //Tablet View Product Slider
             $('.product-slider').slick({
                 slidesToShow: 3,
@@ -721,7 +694,6 @@
                 ]
             });
         });
-
     </script>
 </body>
 
