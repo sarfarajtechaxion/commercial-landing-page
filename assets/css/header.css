@@ -29,8 +29,8 @@
   margin-right: 0;
 }
 .social-icon img {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
 }
 .header-contact {
@@ -55,6 +55,7 @@
 }
 .header-contact li .descr a img {
   margin-right: 10px;
+  width: 20px;
 }
 .header-contact li .descr a:hover {
   color: #43cb83;
