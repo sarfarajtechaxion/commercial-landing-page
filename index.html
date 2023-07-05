@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Landing Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/custom-slick-slider.css">
+    <link rel="stylesheet" href="./assets/css/modal-pop-up.css">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0" nonce="TEqip4WV"></script>
+    <header>
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="main-menu">
+                    <div class="logo">
+                        <img src="https://www.kunvarjirealty.com/img/18f17242137ba34a1a7f8a4f7ad8bf1a.webp"
+                            alt="Site Logo">
+                    </div>
+                    <div class="wrapper">
+                        <ul class="header-contact">
+                            <li>
+                                <div class="descr hidden-xs">
+                                    <a href="tel:919537028646"><img src="./assets/images/call-black.svg" alt="call" /> +91
+                                        9537028646</a>
+                                    <a href="mailto:properties@kunvarjirealty.com"><img src="./assets/images/email.svg"
+                                            alt="email" /> properties@kunvarjirealty.com</a>
+                                </div>
+                            </li>
+                            <li class="hidden-xs">
+                                <span class="icon call icnJumpng"><img src="./assets/images/map.png"
+                                        alt="call" /></span>
+                                <div class="descr">
+                                    <a href="https://www.google.com/maps/place/Kunvarji+Realty/@22.9935875,72.4939684,17z/data=!3m1!4b1!4m6!3m5!1s0x395e83d5018aab51:0xcb6ce1826129ea86!8m2!3d22.9935826!4d72.4988393!16s%2Fg%2F11sfxwgpgn?entry=ttu"
+                                        target="blank">
+                                        B - Wing Siddhivinayak Towers, <br />off S.G. Highway, Makarba,<br />
+                                        Ahmedabad-380051
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner" style="padding-top: 0;">
+        <div class="container">
+            <div id="banner">
+                <div class="banner-wrapper" id="banner-wrapper">
+                    <div class="form">
+                        <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#FF0066" d="M40,-48.2C51.8,-37.8,61.3,-25.1,68.3,-8.6C75.3,7.9,79.8,28.3,71.7,40.6C63.6,52.9,43,57.1,23.4,64.1C3.9,71.2,-14.6,81,-31.1,78.1C-47.5,75.2,-62,59.7,-67.5,42.6C-73.1,25.5,-69.7,6.9,-65.8,-10.9C-61.8,-28.8,-57.3,-45.8,-46.2,-56.4C-35.2,-66.9,-17.6,-71,-1.7,-68.9C14.1,-66.9,28.2,-58.6,40,-48.2Z" transform="translate(100 100)" />
+                        </svg> -->
+                        <h2> CALL REQUEST </h2>
+                        <form class="" id="request-call" method="GET" action="/index.html">
+                            <div class="form-group">
+                                <input name="fullname" class="input required" type="text" placeholder="Full Name *" autocomplete="off"/>
+                            </div>
+                            <div class="form-group">
+                                <input name="phone" class="input" type="text" placeholder="Mobile Number *" autocomplete="off"/>
+                            </div>
+                            <div class="form-group">
+                                <input name="email" class="input" type="email" placeholder="Email Id *" autocomplete="off"/>
+                            </div>
+                            <div class="form-group">
+                                <select name="projects" id="projects">
+                                    <option value="">Investment Type</option>
+                                    <option value="Showroom">Showroom</option>
+                                    <option value="Offices">Offices</option>
+                                    <option value="Corporate House">Corporate House</option>
+                                </select>
+                            </div>
+                            <div class="form-check form-group">
+                                <input class="form-checkbox" type="checkbox" value="" id="checkbox" name="checkbox">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    I agree that KUNVARJI Realty team can connect us via Phone Call, WhatsApp, SMS, E-Mail setc.
+                                </label>
+                            </div>
+                            <button type="submit" class="btn-primary green" id="submit" name="submit">SUBMIT</button>
+                            <div class="otpDiv hide">
+                                <div class="form-group">
+                                    <input name="otp" class="input" type="text" maxlength="6"
+                                        placeholder="Verify OTP" />
+                                </div>
+                                <button type="button" class="btn-primary green" id="generate-otp" name="generate-otp">Generate OTP</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div> <img src="./assets/images/banner/Navartna banner.jpg" alt="Navaratna corporate park"> </div>
+                    <!-- <div> <img src="./assets/images/banner/Navaratna corporate park A.jpg" alt="Navaratna corporate park A"> </div>
+                    <div> <img src="./assets/images/banner/Navaratna corporate park Tower B.jpg" alt="Navaratna corporate park Tower B"> </div>
+                    <div> <img src="./assets/images/banner/STRATUM AT VENUS GROUNDS, NEHRUNAGAR, AHMEDABAD.jpg" alt="STRATUM AT VENUS GROUNDS, NEHRUNAGAR, AHMEDABAD"> </div>
+                    <div> <img src="./assets/images/banner/Stratum venus grounds 1.jpg" alt="Stratum venus grounds 1"> </div>
+                    <div> <img src="./assets/images/banner/Stratum venus grounds 2.jpg" alt="Stratum venus grounds 2"> </div> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Offices Slider-->
+    <section id='affordable' class="slider-section light-pink">
+        <div class="container">
+            <h2>Offices</h2>
+            <div class="product-slider">
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="offices-button">
+                        <img src="./assets/images/offices/NC-park.jpg" class="Offices-img" alt="NC-park" />
+                    </a>
+                    <!-- <a href="" class="visited"><span>  most visited </span></a> -->
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>Navratna Corporate Park </h3>
+                        </a>
+                        <h5>1440 Square Feet</h5>
+                        <h4>Iscon Ambli Road </h4>
+                        <p>Looking for premium office spaces? Enjoy a prime location, state-of-the-art facilities,and a professional environment. Book Today.</p>
+                        <h4 class="price">₹ 1,94,40,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="Navratna Corporate Park">I'm
+                                interested</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="offices-button">
+                        <img src="./assets/images/offices/The-Ridge.jpg" class="Offices-img" alt="The-Ridge" />
+                    </a>
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>The Ridge | </h3>
+                        </a>
+                        <h5>2750 Square Feet</h5>
+                        <h4>S.G.Highway </h4>
+                        <p>Looking for premium office spaces on S.G. Highway? The Ridge Offices, offering state-of-the-art facilities and prime location.
+                        </p>
+                        <h4 class="price">₹ 2,47,50,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="The Ridge">I'm
+                                interested</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="offices-button">
+                        <img src="./assets/images/offices/Ratnanjali-Solitaire.jpg" class="Offices-img" alt="Ratnanjali-Solitaire" />
+                    </a>
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>Ratnanjali Solitaire</h3>
+                        </a>
+                        <h5>1000 Square Feet</h5>
+                        <h4>Satellite </h4>
+                        <p>Looking for premium office spaces in Satelite?Offering state-of-the-art facilities & prime location with modern & spacious workspaces.
+                        </p>
+                        <h4 class="price">₹ 70,00,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="Ratnanjali Solitaire">I'm
+                                interested</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="offices-button">
+                        <img src="./assets/images/offices/Shreedhar-Athens.jpg" class="Offices-img" alt="Shreedhar-Athens" />
+                    </a>
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>Shreedhar Athens</h3>
+                        </a>
+                        <h5>15000 Square Feet</h5>
+                        <h4>C.G. Road </h4>
+                        <p>Looking for premium office spaces in C.G. Road? Experience luxurious amenities and a prime location. Book your dream office today!</p>
+                        <h4 class="price">₹ 12,00,00,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="Shreedhar Athens">I'm
+                                interested</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="offices-button">
+                        <img src="./assets/images/offices/Unicus-Shyamal.jpg" class="Offices-img" alt="Unicus-Shyamal" />
+                    </a>
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>Unicus Shyamal</h3>
+                        </a>
+                        <h5>900 Square Feet</h5>
+                        <h4>Shyamal Cross Road </h4>
+                        <p>Looking for office near Shyamal Cross Road? Discover modern & flexible workspaces designed to enhance productivity. </p>
+                        <h4 class="price">₹ 54,00,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="Unicus Shyamal">I'm
+                                interested</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="offices-button">
+                        <img src="./assets/images/offices/sankalp.jpg" class="Offices-img" alt="Sankalp Square 3b" />
+                        <!-- <span class="marketed">Marketed By Kunvarji</span> -->
+                    </a>
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>Sankalp Square 3b</h3>
+                        </a>
+                        <h5> Not Available Square Feet</h5>
+                        <h4>Sindhubhavan Road </h4>
+                        <p>Looking for premium office at Sindhubhavan Road? modern amenities & a prime location,perfect for businesses of all sizes.</p>
+                        <h4 class="price">₹ 54,00,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="Sankalp Square 3b">I'm
+                                interested</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Showroom Slider-->
+    <section class="slider-section light-grey">
+        <div class="container">
+            <h2>Showroom</h2>
+            <div class="tab-product-slider">
+                <div class="product-slider">
+                    <div class="slider-slide">
+                        <a href="javascript:void(0);" class="showroom-button">
+                            <img src="./assets/images/showroom/Ratnanjali-Solitaire.jpg" width="500" height="330" alt="Ratnanjali-Solitaire" />
+                        </a>
+                        <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                        <div class="details">
+                            <a href="http://">
+                                <h3>Ratnanjali Solitaire</h3>
+                            </a>
+                            <h5>2500 Square Feet</h5>
+                            <h4>Prerna Tirth Derasar </h4>
+                            <p>Looking for a luxurious showroom near Prerna Tirth Derasar? Visit Ratnanjali Solitaire for a wide range of exquisite products.</p>
+                            <h4 class="price">₹ 3,00,00,000/- <span>**</span></h4>
+                            <div class="action">
+                                <button class="prop_interest btn-primary blue" data-type="Ratnanjali Solitaire">I'm interested</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide">
+                        <a href="javascript:void(0);" class="showroom-button">
+                            <img src="./assets/images/showroom/Unicus-Shyamal.jpg" width="500" height="330" alt="Unicus-Shyamal" />
+                        </a>
+                        <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                        <!-- <a href="" class="visited"><span>  most visited </span></a> -->
+                        <div class="details">
+                            <a href="http://">
+                                <h3>Unicus Shyamal</h3>
+                            </a>
+                            <h5>2300 Square Feet</h5>
+                            <h4>Shyamal Cross Road </h4>
+                            <p>Discover collection of Unicus Shyamal.Explore our wide range of stylish and trendy products that elevate your fashion game.</p>
+                            <h4 class="price">₹  2,87,50,000/- <span>**</span></h4>
+                            <div class="action">
+                                <button class="prop_interest btn-primary blue" data-type="Unicus Shyamal">I'm interested</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide">
+                        <a href="javascript:void(0);" class="showroom-button">
+                            <img src="./assets/images/showroom/Binori-B-Square-3.jpg" width="500" height="330" alt="Binori B Square 3" />
+                        </a>
+                        <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                        <div class="details">
+                            <a href="http://">
+                                <h3>Binori B Square 3</h3>
+                            </a>
+                            <h5>3575 Square Feet</h5>
+                            <h4>Sindhubhavan Road  </h4>
+                            <p>Looking for showroom on Sindhubhavan Road? Explore our premium showroom & discover the perfect space for your business needs.</p>
+                            <h4 class="price">₹ 8,93,75,000/- <span>**</span></h4>
+                            <div class="action">
+                                <button class="prop_interest btn-primary blue" data-type="Binori B Square 3">I'm interested</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide">
+                        <a href="javascript:void(0);" class="showroom-button">
+                            <img src="./assets/images/showroom/Binori-B-Square-1.jpg" alt="Binori-B-Square-1" />
+                        </a>
+                        <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                        <div class="details">
+                            <a href="http://">
+                                <h3>Binori B Square 1</h3>
+                            </a>
+                            <h5>3000 Square Feet</h5>
+                            <h4>Iscon Ambli road </h4>
+                            <p>Looking for a showroom in Iscon Ambli road?A prime location for your business needs.Explore our spacious and modern showroom today.</p>
+                            <h4 class="price">₹ 7,20,00,000/- <span>**</span></h4>
+                            <div class="action">
+                                <button class="prop_interest btn-primary blue" data-type="Binori B Square 1">I'm interested</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide">
+                        <a href="javascript:void(0);" class="showroom-button">
+                            <img src="./assets/images/showroom/Venus-Stratum.jpg" alt="Venus Stratum" />
+                        </a>
+                        <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                        <div class="details">
+                            <a href="http://">
+                                <h3>Venus Stratum</h3>
+                            </a>
+                            <h5>4900 Square Feet</h5>
+                            <h4>Iscon Ambli road </h4>
+                            <p>Looking for the best showroom in Nehrunagar? Visit Venus Stratum, where you'll find a wide range of top-quality products.</p>
+                            <h4 class="price">₹ 7,84,00,000/- <span>**</span></h4>
+                            <div class="action">
+                                <button class="prop_interest btn-primary blue" data-type="Venus Stratum">I'm
+                                    interested</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-slide">
+                        <a href="javascript:void(0);" class="showroom-button">
+                            <img src="./assets/images/showroom/aws3.jpg" alt="AWS 3" />
+                        </a>
+                        <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                        <div class="details">
+                            <a href="http://">
+                                <h3>Aws3</h3>
+                            </a>
+                            <h5>5000 Square Feet</h5>
+                            <h4>Memnagar </h4>
+                            <p>Looking for AWS3 showroom in Memnagar?explore wide range of AWS3 products.Get the best deals & experience top-notch service.</p>
+                            <h4 class="price">₹ 9,75,00,000/- <span>**</span></h4>
+                            <div class="action">
+                                <button class="prop_interest btn-primary blue" data-type="Aws3">I'm interested</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Corporate House Slider-->
+    <section id='gift-city' class="slider-section light-pink">
+        <div class="container">
+            <h2>Corporate House</h2>
+            <div class="product-slider">
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="corporate-button">
+                        <img src="./assets/images/corporate-house/nc-park.jpg" class="corporate-img" alt="Navratna Corporate Park" />
+                    </a>                    
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>Navratna Corporate Park</h3>
+                        </a>
+                        <h5>10,400 Square Feet</h5>
+                        <h4>Iscon-Ambli Road</h4>
+                        <p>Looking for a prestigious corporate park in Iscon-Ambli Road? Explore Navratna Corporate Park House for more information!</p>
+                        <h4 class="price">₹ 20,80,00,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="Navratna Corporate Park">I'm
+                                interested</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="corporate-button">
+                        <img src="./assets/images/corporate-house/wtt.jpg" class="corporate-img" alt="WTT" />
+                    </a>
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>World Trade Tower</h3>
+                        </a>
+                        <h5>7500 Square Feet</h5>
+                        <h4>Makarba </h4>
+                        <p>Looking for a house in Makarba? Discover the best options at WTT House Makarba. Explore our listings and find your dream home today.</p>
+                        <h4 class="price">₹ 6,00,00,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="WTT">I'm
+                                interested</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="corporate-button">
+                        <img src="./assets/images/corporate-house/salister.jpg" class="corporate-img" alt="banner 3" />
+                    </a>
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>Salister</h3>
+                        </a>
+                        <h5>18,000 Square Feet</h5>
+                        <h4>Rajpath Club Road </h4>
+                        <p>Looking for a corporate house near Rajpath Club Road? Offering top-notch amenities and convenient location for your business needs.</p>
+                        <h4 class="price">₹ 19,80,00,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="Salister">I'm interested</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="corporate-button">
+                        <img src="./assets/images/corporate-house/times-corporate-park.jpg" class="corporate-img" alt="Times Corporate Park" />
+                    </a>
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>Times Corporate Park</h3>
+                        </a>
+                        <h5>18,000 Square Feet</h5>
+                        <h4>Thaltej, Ahmedabad </h4>
+                        <p>Looking for a corporate house in Thaltej? A premium business complex offering state-of-the-art facilities and prime location.</p>
+                        <h4 class="price">₹ 16,20,00,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="Times Corporate Park">I'm
+                                interested</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="corporate-button">
+                        <img src="./assets/images/corporate-house/shreeya-amalga.jpg" class="corporate-img" alt="Shreeya Amalga" />
+                    </a>
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>Shreeya Amalga</h3>
+                        </a>
+                        <h5>9540 Square Feet</h5>
+                        <h4>Off Sindhubhavan Road </h4>
+                        <p>Looking for a corporate house in Shreeya Amalga? Checkout our prime location off Sindhubhavan Road. Book your space today!</p>
+                        <h4 class="price">₹ 7,63,20,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="Shreeya Amalga">I'm interested</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <a href="javascript:void(0);" class="corporate-button">
+                        <img src="./assets/images/corporate-house/kp-epitom.jpg" class="corporate-img" alt="KP Epitome" />
+                    </a>
+                    <img src="./assets/images/RERA.png" width="200" alt="RERA" class="rera-logo" />
+                    <div class="details">
+                        <a href="http://">
+                            <h3>KP Epitome</h3>
+                        </a>
+                        <h5>9540 Square Feet</h5>
+                        <h4>Makarba </h4>
+                        <p>Looking for a corporate house in Makraba? Luxury & professionalism at KP Epitome.state-of-the-art facilities and prime location. </p>
+                        <h4 class="price">₹ 6,08,70,000/- <span>**</span></h4>
+                        <div class="action">
+                            <button class="prop_interest btn-primary blue" data-type="KP Epitome">I'm
+                                interested</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <!-- <footer>
+        <div class="top-links">
+            <div class="container">
+                <div class="wrapper">
+                    <div>
+                        <ul>
+                            <li><a href="https://www.kunvarjirealty.com/disclaimer" class="footer-link">Disclaimer</a>
+                            </li>
+                            <li><a href="https://www.kunvarjirealty.com/privacy-policy" class="footer-link">Privacy
+                                    Policy</a></li>
+                            <li><a href="https://www.kunvarjirealty.com/terms-and-condition" class="footer-link">Terms
+                                    of Use</a></li>
+                            <li><a href="https://www.kunvarjirealty.com/blog" class="footer-link">Blog & News</a></li>
+                        </ul>
+                    </div>
+                    <div class="rera"> <strong>RERA : AG/GJ/AHMEDABAD/AHMADABAD CITY/AUDA/AA00179/270922R </strong>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/kunvarjirealty/" class="social-icon"><span class="facebook">
+                                <img src="./assets/images/fb.png" alt="facebook"> </span></a>
+                        <a href="https://www.instagram.com/kunvarji_realty/" class="social-icon"><span
+                                class="instagram"> <img src="./assets/images/ins.png" alt="instagram"> </span></a>
+                        <a href="https://in.linkedin.com/company/kunvarjirealty" class="social-icon"><span
+                                class="linkedin">
+                                <img src="./assets/images/in.png" alt="linkedin"> </span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <footer>
+        <div class="container">
+            <div class="footer-container ">
+
+                <div class="column column-1">
+                    <a class="logo">
+                        <img src="https://www.kunvarjirealty.com/img/18f17242137ba34a1a7f8a4f7ad8bf1a.webp"
+                            alt="Site Logo">
+                    </a>
+                    <ul>
+                        <!-- <li>
+                            <span class="icon">
+                                <a
+                                    href="https://www.google.com/maps/place/Kunvarji+Realty/@22.9935875,72.4939684,17z/data=!3m1!4b1!4m6!3m5!1s0x395e83d5018aab51:0xcb6ce1826129ea86!8m2!3d22.9935826!4d72.4988393!16s%2Fg%2F11sfxwgpgn?entry=ttu">
+                                    <img src="./assets/images/map.png" alt="call" />
+                                </a>
+                            </span>
+                            <div class="descr">
+                                <a
+                                    href="https://www.google.com/maps/place/Kunvarji+Realty/@22.9935875,72.4939684,17z/data=!3m1!4b1!4m6!3m5!1s0x395e83d5018aab51:0xcb6ce1826129ea86!8m2!3d22.9935826!4d72.4988393!16s%2Fg%2F11sfxwgpgn?entry=ttu">
+                                    B - Wing Siddhivinayak Towers, <br />off S.G. Highway, Makarba,<br />
+                                    Ahmedabad-380051
+                                </a>
+                            </div>
+                        </li> -->
+                        <li>
+                            <a href="tel:919537028646" class="icon call icnBubble"><img src="./assets/images/wa.png"
+                                    alt="call" /></a>
+                            <div class="descr">
+                                <a href="tel:919537028646">+91 9537028646</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="tel:919537028646" class="icon call icnBubble"><img src="./assets/images/email.svg"
+                                    alt="call" /></a>
+                            <div class="descr">
+                                <a href="mailto:properties@kunvarjirealty.com">properties@kunvarjirealty.com</a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/kunvarjirealty/" class="social-icon"><span
+                                        class="facebook">
+                                        <img src="./assets/images/fb.png" alt="facebook"> </span></a>
+                                <a href="https://www.instagram.com/kunvarji_realty/" class="social-icon"><span
+                                        class="instagram"> <img src="./assets/images/ins.png" alt="instagram">
+                                    </span></a>
+                                <a href="https://in.linkedin.com/company/kunvarjirealty" class="social-icon"><span
+                                        class="linkedin">
+                                        <img src="./assets/images/in.png" alt="linkedin"> </span></a>
+                            </div>
+                        </li>
+                        <li><div class="fb-like" data-href="https://www.facebook.com/kunvarjirealty/" data-width="00px" data-layout="" data-action="" data-size="" data-share="true"></div></li>
+                    </ul>
+                </div>
+                <div class="column column-2">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://www.kunvarjirealty.com/disclaimer" class="footer-link">Disclaimer</a>
+                        </li>
+                        <li><a href="https://www.kunvarjirealty.com/privacy-policy" class="footer-link">Privacy
+                                Policy</a></li>
+                        <li><a href="https://www.kunvarjirealty.com/terms-and-condition" class="footer-link">Terms
+                                of Use</a></li>
+                        <li><a href="https://www.kunvarjirealty.com/blog" class="footer-link">Blog & News</a></li>
+                    </ul>
+                </div>
+                <div class="column column-3">
+                    <h3>Rate Us</h3>
+                    <ul class="reviews">
+                        <li>
+                            <a  href="https://www.google.com/maps/place/Kunvarji+Realty/@22.9935875,72.4939684,17z/data=!3m1!4b1!4m6!3m5!1s0x395e83d5018aab51:0xcb6ce1826129ea86!8m2!3d22.9935826!4d72.4988393!16s%2Fg%2F11sfxwgpgn?entry=ttu">
+                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.821580866692!2d72.49626437597847!3d22.993587517407995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83d5018aab51%3A0xcb6ce1826129ea86!2sKunvarji%20Realty!5e0!3m2!1sen!2sin!4v1688129044926!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                                <img src="./assets/images/review/greview.jpg" alt="google review" />
+                            </a>
+                        </li>                      
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="rera light-pink"> <strong>RERA : AG/GJ/AHMEDABAD/AHMADABAD CITY/AUDA/AA00179/270922R </strong></div>
+    </footer>
+    <!-- Popup Modal -->
+    <div id="properties-modal">
+        <span class="close">&times;</span>
+        <h3 style="text-align: center;margin-bottom: 10px;" class="Property_type_title"></h3>
+        <form method="post" id="properties-info">
+            <input type="hidden" class="Property_type" value="Premium" />
+            <div class="form-group">
+                <input name="fullname" class="input" type="text" placeholder="Full Name *" />
+            </div>
+            <div class="form-group">
+                <input name="phone" class="input" type="text" placeholder="Mobile Number *" />
+            </div>
+            <div class="form-group">
+                <input name="email" class="input" type="email" placeholder="Email Id *" />
+            </div>
+            <button type="submit" class="btn-primary blue" type="submit">SUBMIT</button>
+        </form>
+    </div>
+    <!-- Default jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Modal Pop up -->
+    <script src="./assets/js/modal-pop-up.js"></script>
+    <!-- jQuery Validation -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <!-- Product Slider -->
+    <script>
+        $('.single-item').slick({
+            infinite: true,
+            slidesToShow: 1,
+            arrows: true,
+            autoplay: true,
+            dots: true,
+        });
+        // Banner Form Validation
+        $("#request-call").validate({
+            ignore: [],
+            rules: {
+                fullname: 'required',
+                email: {
+                    required: true,
+                    email: true,
+                    maxlength: 255,
+                },
+                phone: {
+                    required: true,
+                    number: true,
+                    minlength: 10,
+                    maxlength: 10
+                },
+                projects: 'required',
+                checkbox: {
+                    required: true,
+                }
+            },
+            messages: {
+                firstname: 'please enter full name',
+                email: 'please enter valid email id',
+                phone: 'phone number must 10 digit',
+                projects: 'please select an option from the list',
+                checkbox: 'please select check mark for communication',
+            },
+        });
+        
+
+        // var form = $( "#request-call" );
+        // form.validate();
+        // $( "button" ).click(function() {
+        // alert( "Valid: " + form.valid() );
+        // });
+        $(document).ready(function () {
+            $('#generate-otp').click(function () {
+                // alert('clicked.');
+                // if (validateForm() === true) {
+                //     alert('Form is valid.');
+                // }
+                // else{
+                //     alert('Form is not valid.');
+                // }
+            if ($('#request-call').valid()) {
+                $(".otpDiv").addClass('show');
+                $(".otpDiv").removeClass('hide');
+                $('#request-call').addClass('hide');
+                $('#request-call').removeClass('show');
+            }else{
+                $(".otpDiv").addClass('hide');
+                $(".otpDiv").removeClass('show');
+                $('#request-call').addClass('show');
+                $('#request-call').removeClass('hide');
+            }
+        });
+            //Tablet View Product Slider
+            $('.product-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                arrows: true,
+                dots: false,
+                autoplay: false,                
+                swipeToSlide: false,
+                responsive: [
+                    {
+                        breakpoint: 1280,
+                        settings: {                            
+                            arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: false,
+                            swipeToSlide: false,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false,
+                            swipeToSlide: true,
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false,
+                            swipeToSlide: true,
+                        }
+                    }
+                    ,
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false,
+                            swipeToSlide: true,
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
+</body>
+
+</html>
