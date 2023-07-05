@@ -56,7 +56,7 @@ footer {
     flex-wrap: wrap;
 }
 .reviews li img {
-  width: 150px;
+  width: 200px;
 }
 @media only screen and (min-width:768px) {
   .footer-container {
@@ -75,10 +75,6 @@ footer {
 
 @media only screen and (min-width:1024px) {
   .column.column-1,.column.column-2,.column.column-3 { width: 33.33%; }
-  .reviews li img {
-    width: 200px;
-  }
-  
   .column-3 iframe {   
     max-width: 500px;
   }
