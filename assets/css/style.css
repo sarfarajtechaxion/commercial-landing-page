@@ -296,11 +296,11 @@ input:focus {
   height: 250px;
 }
 .product-slider .slider-slide .details p {
-  width: 100%;
+  /* width: 100%;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: vertical; */
   margin-bottom: 10px;
   /* text-align: justify; */
   font-size: 15px;

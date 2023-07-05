@@ -43,6 +43,9 @@
 .header-contact .icon img {
   width: 20px;
 }
+.header-contact .icon img.business {
+  width: 30px;
+}
 .header-contact li {
   margin-right: 15px;
 }
