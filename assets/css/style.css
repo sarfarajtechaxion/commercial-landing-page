@@ -17,9 +17,21 @@ a:hover {
 section {
   padding: 25px 0;
 }
+.desktop {
+  display: none;
+}
+.mobile {
+  display: block;
+}
 @media only screen and (min-width: 768px) {
   section {
     padding: 40px 0;
+  }
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
   }
 }
 .container {
@@ -100,24 +112,32 @@ li {
 }
 
 .banner .form {
-  /* max-width: 400px;
-  width: 100%; */
   padding: 20px;
   box-shadow: 0px 5px 15px 1px #28887F;
   background: rgb(72,225,211);
   background: linear-gradient(0deg, rgba(72,225,211,1) 4%, rgba(13,57,131,1) 50%);
   border-radius: 5px;
   color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .banner .form h2 {
   text-align: center;
+}
+  
+#request-call {
+  width: 100%;
 }
 .form-group .input {
   width: 100%;
   margin: 1px 0 20px;
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #000;
+  border-radius: 5px;
+  border: 0;
 }
 .form-group #projects {
   width: 100%;
